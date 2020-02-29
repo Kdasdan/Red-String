@@ -1,0 +1,53 @@
+.mainContent .sejours {
+    
+    width: 318px ;
+    height: 158px;
+    margin-bottom: 5%;
+}
+
+.mainContent .sejours p{
+    background-color: rgba(245, 245, 245, 0.75);
+    display: block;
+    width: 30%;
+    margin: 0;
+}
+#carousel {
+    display: none;
+}
+.mainContent .rome{
+    background: url("../images/sejours/petit/colisee-petit.jpg") no-repeat 100% 100% /cover;
+}
+.mainContent .lisbonne{
+    background: url("../images/sejours/petit/chateau.jpg") no-repeat 100% 100% /cover;
+}
+.mainContent .londres{
+    background: url("../images/sejours/petit/bigben.jpg") no-repeat 100% 100% /cover;
+}
+.mainContent .berlin{
+    background: url("../images/sejours/petit/berlin-petit.jpg") no-repeat 100% 100% /cover;
+}
+.mainContent .dublin{
+    background: url("../images/sejours/petit/chateau-petit.jpg") no-repeat 100% 100% /cover;
+}
+
+.listeSejours {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

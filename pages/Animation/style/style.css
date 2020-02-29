@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(https://subtlepatterns.com/patterns/graphy.png);
+}
+
+#solarsystem {
+  height: 900px;
+  width: 900px;
+  position: relative;
+  margin: 20px auto;
+  /* border: 1px solid black; */
+  transform:scale(0.5);
+}
+
+/* ------------------------------------------------------------- */
+#sun, .planet {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.planet {
+  border: 1px dashed #000;
+}
+
+#sun {
+  width: 100px;
+  height: 100px;
+  left: 400px;
+  top: 400px;
+}
+
+#mercury {
+  width: 200px;
+  height: 200px;
+  left:350px;
+  top: 350px;
+  animation: orbit 7.23s linear infinite;
+}
+
+#mercury::after{
+  content: "";
+  width:10px;
+  height: 10px;
+  top: 61px;
+}
+
+#venus {
+  width: 300px;
+  height: 300px;
+  left: 300px;
+  top: 300px;
+  animation: orbit 18.45s linear infinite;
+}
+
+#venus::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 83px;
+}
+
+#earth {
+  width: 400px;
+  height: 400px;
+  top: 250px;
+  left: 250px;
+  animation: orbit 30s linear infinite;
+}
+
+#earth::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  top: 115px;
+}
+
+#mars {
+  width: 500px;
+  height: 500px;
+  top: 200px;
+  left: 200px;
+  animation: orbit 56.43s linear infinite;
+}
+
+#mars::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: 186px;
+}
+
+#jupiter {
+  width: 700px;
+  height: 700px;
+  top: 100px;
+  left: 100px;
+  animation: orbit 355.8s linear infinite;
+}
+
+#jupiter::after {
+  content: "";
+  width: 90px;
+  height: 90px;
+  top: 130px;
+}
+
+#saturne {
+  width: 1000px;
+  height: 1000px;
+  top: -50px;
+  left: -50px;
+  animation: orbit 883.8s linear infinite;
+}
+
+#saturne::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  top: 262px;
+}
+
+#uranus {
+  width: 1300px;
+  height: 1300px;
+  top: -200px;
+  left: -200px;
+  animation: orbit 2520.3s linear infinite;
+}
+
+#uranus::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: 419px;
+}
+
+#neptune {
+  width: 1600px;
+  height: 1600px;
+  top: -350px;
+  left: -350px;
+  animation: orbit 4944s linear infinite;
+}
+
+#neptune::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: 546px;
+}
+
+/* ------------ */
+#sun, 
+#mercury::after,
+#venus::after,
+#earth::after,
+#mars::after,
+#jupiter::after,
+#saturne::after,
+#uranus::after,
+#neptune::after {
+  position: absolute;
+  border-radius: 50%;
+  background:#000;
+  opacity: 0.6;
+  animation: revolution 3s linear infinite;
+}
+
+
+
+/* ------------------------------------------------------- */
+@keyframes orbit {
+  100% {transform: rotate(360deg);}
+}
+@keyframes revolution {
+  100% {transform: rotate(360deg);}
+}

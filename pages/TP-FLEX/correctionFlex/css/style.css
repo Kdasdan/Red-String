@@ -1,0 +1,66 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------Header---------------- */
+header {
+  background-color: red;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  border: 1px solid black;
+  flex: 1;
+}
+
+/* ------------Article---------------- */
+article {
+  flex: 5;
+  display: flex;
+}
+
+section {
+  background-color: lightblue;
+  flex:3;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section p {
+  flex: 1 0 300px;
+}
+
+aside {
+  flex: 1;
+}
+
+#aside1 {
+  background-color: yellow;
+}
+
+#aside2 {
+  background-color: plum;
+}
+/* -------------Footer---------------- */
+footer {
+  background-color: lightgreen;
+  text-align: center;
+  flex: 0.5;
+}

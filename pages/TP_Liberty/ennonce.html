@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty - Responsive One Page Template</title>
+  <link rel="stylesheet" href="fonts/poiretone-regular-webfont.woff">
+  <link rel="stylesheet" href="fonts/poiretone-regular-webfont.woff2">
+  <link rel="stylesheet" href="./fonts/stylesheet.css">
+  <!-- TP final : 
+      Transformez la maquette graphique en fichiers HTML et CSS 
+      Le template à créer est fourni dans le dossier : liberty.jpg
+      Les éléments graphiques (images et fonts) sont fournis dans le dossier 'assets'
+
+      Design spec: https://xd.adobe.com/spec/f1e67609-7f16-450d-5443-27b6a07a973c-87d7/
+      Mot de passe: Numer1call
+      Typographies: include la css de la font, puis pour utiliser la police:
+      
+      h1 {
+        font-family: 'poiret_oneregular', sans-serif;
+      }
+      p {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+   -->
+</head>
+
+<body id="top">
+  <header>
+    <h1>LIBERTY</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#works">OUR WORKS</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="hall"> 
+    <div class="intro" id="home">
+      <div class="logo"></div>
+      <h2>
+        HELLO WE ARE LIBERTY <br>
+        WE DO AMAZING THINGS EVERYDAY
+      </h2>
+      <a href="#contact"><button>CONTACT US</button></a>
+    </div>
+
+    <div class="works">
+      <div id="works"></div>
+      <h2>OUR WORKS</h2>
+      <p>Sed aliquam vitae lacus quis interdum. Vestibulum ante ipsum primis in <br> faucibus orci luctus et ultrices posuere cubilia aenean.</p>
+
+      <div class="images">
+        <div class="first">
+            <img src="./images/img-7.jpg" alt="image7">
+            <img src="./images/img-6.jpg" alt="image6">
+            <img src="./images/img-5.jpg" alt="image5">
+            <img src="./images/img-4.jpg" alt="image4">
+        </div>
+
+        <div class="second">
+            <img src="./images/img-3.jpg" alt="image3">
+            <img src="./images/img-2.jpg" alt="image2">
+            <img src="./images/img-1.jpg" alt="image1">
+            <img src="./images/img-0.jpg" alt="image0">
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <div id="pricing"></div>
+      <h2>PRICING TABLE</h2>
+      <p>Sed aliquam vitae lacus quis interdum. Vestibulum ante ipsum primis in <br> faucibus orci luctus et ultrices posuere cubilia aenean.</p>
+    </div>
+    <div class="tabs">
+      <div class="bronze">
+        <table width="274px" height="550px" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="case">Bronze<p>$5 / month</p></td>
+          </tr>
+          <tr>
+            <td>1 Account<div class="trait"></div></td>
+          </tr>
+          <tr>
+            <td>1 Projet<div class="trait"></div></td>
+          </tr>
+          <tr>
+            <td>50K API Access<div class="trait"></div></td>
+          </tr>
+          <tr>
+            <td>50MB Storage<div class="trait"></div></td>
+          </tr>
+          <tr>
+            <td>Custom Cloud Services<div class="trait"></div></td>
+          </tr>
+          <tr>
+            <td>Weekly Reports<div class="trait"></div></td>
+          </tr>
+          <tr>
+              <td><button>SIGN UP NOW</td>
+          </tr>
+        </table>
+      </div>
+  
+      <div class="silver">
+          <table width="274px" height="550px" border="0" cellspacing="0"    cellpadding="0">
+              <tr>
+                <td class="case">Silver<p>$10 / month</p></td>
+              </tr>
+              <tr>
+                <td>1 Account<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>3 Projet<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>100K API Access<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>100MB Storage<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>Custom Cloud Services<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>Weekly Reports<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td><button>SIGN UP NOW</button></td>
+              </tr>
+            </table>
+      </div>
+  
+      <div class="gold">
+          <table width="274px" height="550px" border="0" cellspacing="0" cellpading="0">
+              <tr>
+                <td class="case">Gold<p id="pgold">$20 / month</p></td>
+              </tr>
+              <div class="bordergold">
+                <tr>
+                  <td>2 Account<div class="trait"></div></td>
+                </tr>
+                <tr>
+                  <td>5 Projet<div class="trait"></div></td>
+                </tr>
+                <tr>
+                  <td>100K API Access<div class="trait"></div></td>
+                </tr>
+                <tr>
+                  <td>200MB Storage<div class="trait"></div></td>
+                </tr>
+                <tr>
+                  <td>Custom Cloud Services<div class="trait"></div></td>
+                </tr>
+                <tr>
+                  <td>Weekly Reports<div class="trait"></div></td>
+                </tr>
+                <tr>
+                    <td><button id="gbutton">SIGN UP NOW</button></td>
+                </tr>
+              </div>
+            </table>
+      </div>
+  
+      <div class="diamond">
+          <table width="274px" height="550px" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="case">Diamond<p>$35 / month</p></td>
+              </tr>
+              <tr>
+                <td>5 Account<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>20 Projet<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>300K API Access<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>500MB Storage<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>Custom Cloud Services<div class="trait"></div></td>
+              </tr>
+              <tr>
+                <td>Weekly Reports<div class="trait"></div></td>
+              </tr>
+              <tr>
+                  <td><button>SIGN UP NOW</button></td>
+              </tr>
+            </table>
+    </div>
+    </div>
+
+    <div class="contactus" id="contact">
+      <!-- <fieldset> -->
+        <h2>CONTACT US</h2>
+        <p>Sed aliquam vitae lacus quis interdum. Vestibulum ante ipsun primis in <br>
+        faucibus orci luctus et ultrices posuere cubilia aenean.</p>
+       <div class="box">
+          <textarea name="message" id="message" cols="" rows="" placeholder="  Message"></textarea>
+          <div id="formbox">
+            <input type="text" name="name" id="name" value="" placeholder="   Name">
+            <input type="email" name="email" id="email" required placeholder="   Email">
+            <div class="secondbox">
+              <select name="services" id="services">
+                <option>Service</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+              </select>
+              <button>SEND</button>
+            </div>
+          </div>
+       </div>
+      <!-- </fieldse> -->
+    </div>
+
+    <div class="cadre">
+        <a href="#hall"><button class="rond">^</button></a>
+      <p>Copyright &copy; 2014 Compagny, Inc. All rights reserved. <br>
+      Theme: Liberty 1.0.0. Designed by YoArts</p>
+      <div class="rs">
+          <div class="facebook"></div>
+          <div class="twitter"></div>
+          <div class="google"></div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+  <!-- garder ce code en fin de body : -->
+  <!-- NE PAS SUPPRIMER -- scripts pour le scroll animé dans la page -- NE PAS SUPPRIMER -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('a[href*=#]').on('click', function () { // Au clic sur un élément
+        var page = $(this).attr('href'); // Page cible
+        var speed = 500; // Durée de l'animation (en ms)
+        $('html, body').animate({
+          scrollTop: $(page).offset().top
+        }, speed, 'swing'); // Go
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>

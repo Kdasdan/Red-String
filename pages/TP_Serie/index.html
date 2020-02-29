@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="La description de l'animé Kimetsu no Yaiba (Demon Slayer)">
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Demon Slayer</title>
+</head>
+<body>
+    <div id="style">
+        <img src="./img/logo.png" alt="Logo Demon Slayer" id="logo" />
+        <br />
+        <br />
+        <div id="liens">
+            <nav class="test">
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#saisons">Les saisons</a></li>
+                <li><a href="#youtube">Voir sur YouTube</a></li>
+            </nav>  
+        </div>
+        <img src="./img/demonslayer.jpg" alt="Image Demon Slayer" id="ds" />
+        <nav>
+            <ul>
+                <li><strong>Date de diffusion : </strong>6/ 4/ 2019</li>
+                <li><strong>Nom original : </strong>鬼滅の刃 / Kimetsu no Yaiba</li>
+                <li><strong>Classification : </strong>Accord parental souhaitable</li>
+                <li><strong>Genre : </strong>Action, Aventure, Demons, Drame, Fantaisie, Surnaturel</li>
+                <li><strong>Copyright : </strong>©Koyoharu Gotoge / SHUEISHA, Aniplex, ufotable</li>
+                <li><strong>Suivi par : </strong>33861 utilisateurs</li>
+                <li><strong>Réalisation : </strong>Haruo Sotozaki</li>
+                <li><strong>Animation production : </strong><a href="https://fr.wikipedia.org/wiki/Ufotable" target="_blank">ufotable</a></li>
+                <li><strong>Character Design : </strong>Akira Matsushima</li>
+                <li><strong>Musique : </strong><a href="https://fr.wikipedia.org/wiki/Yuki_Kajiura" target="_blank">Yuki Kajiura</a> / <a href="https://en.wikipedia.org/wiki/Go_Shiina" target="_blank">Go Shiina</a></li>
+                <br />
+            </ul>
+        </nav>
+    </div>
+    <h2>Résumé</h2>
+    <div id="resume">
+        <p>
+            Découvrez une aventure où le sang va couler sous la lame de l’épée. Nous sommes pendant l’ère Taishô. Tanjirô, un jeune et sympathique vendeur de charbon voit son quotidien changer radicalement après le massacre de sa famille par un démon. Seule sa petite sœur Nezuko survit à l’attaque, mais elle est transformée en un démon féroce. Ils partent tous deux en voyage afin de prendre leur revanche et de rendre à Nezuko son apparence d’origine. Vivez avec eux ce périple dans lequel le destin des humains et des démons s’entremêlent.
+        </p>
+    </div>
+    <div id="saisons">
+        <h2>Les saisons</h2>
+        <table width="100%" border="1" />
+            <tr>
+                <th>Saison</th>
+                <th>Nombre d'épisodes</th>
+                <th>Date de diffusion</th>
+                <th>Chaine de diffusion</th>
+            </tr>
+            <tr>
+                <th>1 (Arc 1)</th>
+                <td>13</td>
+                <td>6/ 4/ 2019</td>
+                <td>Wakanim</td>
+            </tr>
+            <tr>
+                    <th>1 (Arc 2)</th>
+                    <td>13</td>
+                    <td>6/ 4/ 2019</td>
+                    <td>Wakanim</td>
+            </tr>
+            <tr>
+                    <th>2 (Film)</th>
+                    <td>1</td>
+                    <td>En cours de production</td>
+                    <td>Wakanim</td>
+            </tr>
+        </table>    
+    </div>
+    <div id="youtube">
+        <h2>Voir sur YouTube</a></h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R-w4KLfgf8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+      $('a[href*=#]').on('click', function () { // Au clic sur un élément
+        var page = $(this).attr('href'); // Page cible
+        var speed = 500; // Durée de l'animation (en ms)
+        $('html, body').animate({
+          scrollTop: $(page).offset().top
+        }, speed, 'swing'); // Go
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>

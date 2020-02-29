@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kazim Dasdan – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/760c8a2c92.js"></script>
+  <link rel="stylesheet" href="css/accueil.css">
+  <link rel="stylesheet" href="css/mini_projets.css">
+  <link rel="stylesheet" href="css/a_propos.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/media_queries.css">
+</head>
+<body>
+  <header>
+    <h1>Kazim Dasdan</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#acc">Accueil</a></li>
+        <li><a href="#test">Mini-Projets</a></li>
+        <li><a href="#propos">À Propos</a></li>
+        <li><a href="#test3">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="acc">
+    <div id="box">
+      <h2>Présentation </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quia a veniam doloribus aperiam id sint quaerat natus, dignissimos quae voluptas ut inventore, eum iusto sed iste error tempore! Voluptatibus?
+        <br><br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis debitis cum minima laborum exercitationem, hic maxime ipsum nostrum quas, voluptate dolorum id ipsa magni mollitia voluptatem praesentium illum at distinctio.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error debitis quos quisquam pariatur esse, animi adipisci saepe a recusandae iste molestias iusto reiciendis, blanditiis ab eos libero temporibus deleniti consectetur?
+      </p>
+    </div>
+    <div id="arrow">
+      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </div>
+    <div class="test" id="test">
+      <h1>Mini projets</h1>
+
+      <div id="theBox">
+        <a href="pages/Anima/accueil.html" target="_blank">
+          <div class="project">
+            Refonte de site web
+          </div>
+        </a>
+        <a href="pages/TP_Liberty/ennonce.html" target="_blank">
+          <div class="project">
+            LIBERTY
+          </div>
+        </a>
+        <a href="pages/solarSystem/index.html" target="_blank">
+          <div class="project">
+            Solar System
+          </div>
+        </a>
+        <a href="pages/TP_Serie/index.html" target="_blank">
+          <div class="project">
+            Kimetsu no Yaiba
+          </div>
+        </a>
+        <a href="pages/TP_Card/index.html" target="_blank">
+          <div class="project">
+            The Card
+          </div>
+        </a>
+        <a href="pages/TP-Pixel-Art/index.html" target="_blank">
+          <div class="project">
+            Pixel Art 1.0
+          </div>
+        </a>
+        <a href="pages/TP-GRID/index.html" target="_blank">
+          <div class="project">
+            Pixel Art 2.0
+          </div>
+        </a>
+        <a href="pages/Animation/index.html" target="_blank">
+          <div class="project">
+            Animations
+          </div>
+        </a>
+        <a href="pages/TP-FLEX/index.html" target="_blank">
+          <div class="project">
+            Flex
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div id="propos"></div>
+    <div id="test2">
+      <h1>À propos</h1>
+      <div id="denim">
+        <div id="cv"></div>
+      </div>
+    </div>
+
+    <div id="test3">
+      <h1>Contact</h1>
+      <div id="contactMe">
+        <form action="">
+          <label for="name">Votre nom (obligatoire)</label>
+   
+          <input type="text" class="champs">
+         
+          <label for="email">Votre e-mail (obligatoire)</label>
+  
+          <input type="email" class="champs">
+
+          <label for="sujet">Sujet</label>
+    
+          <input type="text" class="champs">
+          
+          <label for="message">Votre message</label>
+          
+          <textarea name="message" id="message" cols="30" rows="10" class="champs">
+
+          </textarea>
+          
+          <input type="submit" value="Envoyer" class="champs" id="button">
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    © 2020 - Kazim Dasdan
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('a[href*=#]').on('click', function () { // Au clic sur un élément
+        var page = $(this).attr('href'); // Page cible
+        var speed = 500; // Durée de l'animation (en ms)
+        $('html, body').animate({
+          scrollTop: $(page).offset().top
+        }, speed, 'swing'); // Go
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>
